@@ -1,0 +1,49 @@
+Junior Data Scientist
+NileBasket — Cairo, Egypt (Hybrid: New Cairo office, 3 days on-site)
+Full-time | Data & AI Team
+
+About NileBasket
+NileBasket is an online grocery and household delivery platform serving over 400,000 active customers across Greater Cairo and Alexandria. Our Data & AI team builds the models behind product search, recommendations, demand forecasting and customer support automation, in both Arabic and English.
+
+About the Role
+We are looking for a Junior Data Scientist to join our Data & AI team. You will work closely with product managers, analysts and engineers to turn our order, search and customer data into models and tools that improve the customer experience. This role is a great fit for recent graduates or final-year students with strong project experience who want to grow in a fast-moving e-commerce environment.
+
+What You Will Do
+- Clean, explore and analyze large datasets of orders, product catalog and customer behavior using Python and SQL.
+- Build, evaluate and improve machine learning models for use cases such as demand forecasting, customer churn and product recommendations.
+- Develop NLP solutions for Arabic and English customer reviews and support tickets, including sentiment analysis and intent classification.
+- Contribute to our internal LLM assistant that answers business questions over company data using RAG.
+- Design and analyze A/B tests to measure the impact of new features and models on key business metrics.
+- Package models as APIs and support their deployment with the engineering team.
+- Build clear dashboards and visualizations and present findings to non-technical stakeholders.
+
+Requirements (Must Have)
+- Bachelor's degree in Computer Science, Data Science, Statistics or a related field (final-year students graduating within 12 months are welcome to apply).
+- 0–2 years of experience in data science or machine learning, including internships, freelance work or substantial personal projects.
+- Strong programming skills in Python and solid SQL.
+- Hands-on experience with Pandas and Scikit-learn.
+- Experience with at least one deep learning framework (PyTorch or TensorFlow).
+- Practical experience with NLP, including transformer models such as BERT.
+- Solid understanding of statistics and experiment design, with hands-on experience running and analyzing A/B tests.
+- Experience with data visualization tools such as Power BI or Plotly.
+- Good communication skills in English and Arabic.
+
+Nice to Have
+- Experience building LLM applications with LangChain or LlamaIndex and vector databases.
+- Experience serving models with FastAPI or Flask and using Docker.
+- Experience with big data processing using Apache Spark (PySpark).
+- Experience with cloud ML platforms, preferably AWS (SageMaker, S3).
+- Familiarity with Git and collaborative development workflows.
+
+What We Offer
+- Competitive salary and annual performance bonus.
+- Private medical insurance for you and your family.
+- Hybrid work model with flexible hours.
+- Annual learning budget for courses, certifications and conferences.
+- Mentorship from senior data scientists and a clear growth path to Data Scientist within 18–24 months.
+- Monthly NileBasket shopping credit.
+
+How to Apply
+Apply through our careers page with your CV and links to your GitHub or portfolio. Shortlisted candidates will complete a short take-home task followed by a technical interview.
+
+NileBasket is an equal opportunity employer.
