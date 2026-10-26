@@ -59,7 +59,7 @@ def load_job(job_path: str | Path) -> str:
 if __name__ == "__main__":
     # Quick manual test. Run it from the project root:
     #   uv run python -m careercrew.tools.document_parser
-    cv_text = load_cv("data/samples/Mohamed_Ayman_CV_Fixed.pdf")
+    cv_text = load_cv("data/samples/synthetic_cv_01.pdf")
     job_text = load_job("data/samples/job_01.txt")
 
     print(cv_text[:500])

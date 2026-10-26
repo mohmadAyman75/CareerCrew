@@ -146,7 +146,7 @@ def run_input_checks(state: dict) -> str | None:
     from tools.document_parser import load_cv, load_job
 
     state = {
-        "cv_text": load_cv("data/samples/Mohamed_Ayman_CV_Fixed.pdf"),
+        "cv_text": load_cv("data/samples/synthetic_cv_01.pdf"),
         "job_text": load_job("data/samples/job_01.txt"),
     }
     print("Real files  ->", run_input_checks(state))
@@ -180,7 +180,7 @@ if __name__ == "__main__":
         cv_path = sys.argv[1]
         job_path = sys.argv[2]
     else:
-        cv_path = "data/samples/Mohamed_Ayman_CV_Fixed.pdf"
+        cv_path = "data/samples/synthetic_cv_01.pdf"
         job_path = "data/samples/job_01.txt"
 
     state = {

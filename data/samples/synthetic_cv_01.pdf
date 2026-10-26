@@ -1,0 +1,62 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 1191 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 800 Td
+(Sara Adel) Tj T*
+(Junior Data Scientist | Cairo, Egypt) Tj T*
+(sara.adel@example.com | +20 100 000 0000) Tj T*
+() Tj T*
+(SUMMARY) Tj T*
+(Computer science graduate who builds machine learning and NLP projects with Python.) Tj T*
+() Tj T*
+(EXPERIENCE) Tj T*
+(Data Science Intern - Fawry, Cairo \(2025-07 to 2025-09\)) Tj T*
+(- Cleaned and analyzed 2 million payment transactions using Python, Pandas and SQL.) Tj T*
+(- Built a customer churn model with Scikit-learn that reached 0.81 F1 on the test set.) Tj T*
+(- Presented weekly findings to the product team using Power BI dashboards.) Tj T*
+() Tj T*
+(PROJECTS) Tj T*
+(Arabic Review Sentiment Classifier \(Graduation project\)) Tj T*
+(- Fine-tuned a BERT model in PyTorch on 40,000 Arabic product reviews, reaching 88% accuracy.) Tj T*
+(- Served the model as a REST API with FastAPI.) Tj T*
+() Tj T*
+(Movie Recommender) Tj T*
+(- Built a collaborative filtering recommender with Python and Scikit-learn.) Tj T*
+() Tj T*
+(EDUCATION) Tj T*
+(B.Sc. Computer Science - Cairo University \(2021 to 2025\)) Tj T*
+() Tj T*
+(SKILLS) Tj T*
+(Python, SQL, Pandas, Scikit-learn, PyTorch, BERT, FastAPI, Power BI, Git) Tj T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000338 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1581
+%%EOF
