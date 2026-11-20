@@ -33,13 +33,6 @@ ENV/
 env.bak/
 venv.bak/
 .venv/
-.env
-
-# Testing & Coverage
-.pytest_cache/
-.coverage
-htmlcov/
-.tox/
 
 # Environment variables & secrets
 .env
@@ -56,12 +49,6 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# Large artifacts, temp files & generated exports
+# Large artifacts & temp files
 *.zip
 *.log
-*.docx
-*.pdf
-!tests/fixtures/*.docx
-!tests/fixtures/*.pdf
-!"CareerCrew — Multi-Agent Job Application Assistant (Project Spec).docx"
-!data/samples/*.pdf
