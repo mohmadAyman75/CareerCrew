@@ -11,5 +11,5 @@ pydantic>=2.7,<3
 python-dotenv>=1.0
 pyyaml>=6.0
 
-# Tests
-pytest>=8
+# Tests (pytest 9.2 crashes on Python 3.10.0 with "NodeId object has no attribute _str_cache")
+pytest>=8,<9

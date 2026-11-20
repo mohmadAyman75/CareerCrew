@@ -1,0 +1,13 @@
+{
+  "match_score": 76.0,
+  "score_breakdown": {"must": 0.875, "nice": 0.333, "semantic": 0.68, "seniority": 1.0, "format": 1.0},
+  "claim_checks": [
+    {"bullet_text": "Analyzed 2 million payment transactions with Python, Pandas and SQL at Fawry.", "verdict": "supported", "reason": "Matches exp1_b1."},
+    {"bullet_text": "Ran A/B tests to measure the churn model's impact.", "verdict": "unsupported", "reason": "No bullet in the CV mentions A/B tests."}
+  ],
+  "feedback": [
+    "1. Remove the A/B testing claim: it is not in the original CV.",
+    "2. Put the BERT project first: it matches the NLP requirement."
+  ],
+  "passed": false
+}

@@ -25,16 +25,28 @@ The full design is in [`CareerCrew — Multi-Agent Job Application Assistant (Pr
 
 Work in progress. Done so far:
 - `tools/document_parser.py`: reads a PDF CV and a `.txt` job post
-- `agents/supervisor_agent/checks.py`: input checks (CV text, English only, real job post)
-- `agents/supervisor_agent/phase.py`: detects the current phase from the shared state
+- **Shared contracts**: `schemas/` (one file per agent output) and `graph/state.py`
+- **Supervisor agent** (`agents/supervisor/`): checks, phase, router, actions, `ask_user` pause
+- **Graph** (`graph/`): every agent linked through the Supervisor, `fit_check`, fake/real switch
+- **Fake agents** (`agents/fakes.py`): a full session runs from start to end before the real agents exist
+- **Tests**: 72 tests, including one full session per scenario
+
+## How the agents are linked
+
+Every agent is a function `run(state) -> dict` that returns only the state keys it owns.
+After every agent the graph returns to the Supervisor, which decides the next step.
+Agents never import each other. See `agents/supervisor/README.md` for the decision table.
+
+**To plug in your real agent:** create `agents/<name>/agent.py` with `run(state) -> dict`,
+make it pass the same tests as its fake, then change `fake` to `real` for it in `configs/agents.yaml`.
 
 ## Setup
 
-Requires Python 3.11 (3.10 also works).
+Requires Python 3.10 or newer.
 
 ```bash
 python -m venv venv
-venv\Scripts\activate            # Mac/Linux: source venv/bin/activate
+venv\Scriptsctivate            # Mac/Linux: source venv/bin/activate
 pip install -r requirements.txt
 copy .env.example .env           # Mac/Linux: cp .env.example .env
 ```
@@ -47,35 +59,41 @@ Never commit `.env`.
 From the project root:
 
 ```bash
-python -m tools.document_parser
-python -m agents.supervisor_agent.checks
-python -m agents.supervisor_agent.phase
+python -m pytest                                         # all tests
+python -m scripts.run_session                            # one full session with fake agents
+python -m scripts.run_session --scenario critic_rejects_always
+python -m agents.supervisor.checks path/to/cv.pdf path/to/job.txt
 ```
 
-`checks` also accepts your own files:
+Scenarios: `happy`, `not_a_job`, `unclear_cv`, `low_fit`, `critic_rejects_once`, `critic_rejects_always`.
 
-```bash
-python -m agents.supervisor_agent.checks path/to/cv.pdf path/to/job.txt
-```
+## Project structure
 
-## Project structure (current)
+`[SHARED]` = everyone depends on it: change it only with the team's approval.
 
 ```
+schemas/              [SHARED] the contracts: profile, job, resume, critique, interview, routing
+graph/
+  state.py            [SHARED] GraphState: every key and its owner
+  validate.py         [SHARED] require(): input checks that raise clear errors
+  registry.py         fake or real agent, from configs/agents.yaml
+  builder.py          builds the LangGraph graph
+  fit_check.py        gap report + fit score (temporary simple version)
+  session.py          start a session, answer a question, read the state
 agents/
-  supervisor_agent/      Member 1: checks.py, phase.py, prompts/
-tools/
-  document_parser.py     load_cv(), load_job()
-schema/                  shared schemas and configs
-data/
-  samples/               synthetic CV + job post for demos and tests
-  raw/, processed/       datasets (git-ignored, rebuilt by scripts)
+  fakes.py            fake versions of the 5 worker agents
+  supervisor/         Member 1: agent, checks, phase, router, actions
+  profile/ job_intel/ writer/ critic/ interview/   Members 2 to 6 (to do)
+tools/                [SHARED] document_parser.py (more tools to come)
+configs/              [SHARED] agents.yaml, supervisor.yaml
+config.py             [SHARED] load_yaml(), ROOT
+scripts/              run_session.py
 tests/
-UI/
-app/
-eval/
+  fixtures/           [SHARED] one sample JSON per schema
+  helpers.py          builds test states from the fixtures
+data/samples/         [SHARED] synthetic CV + job post
+api/  ui/  evaluation/   empty for now
 ```
-
-The target structure (src layout, one folder per agent) is in section 10 of the spec.
 
 ## Data rules
 

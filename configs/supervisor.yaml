@@ -1,0 +1,29 @@
+# Supervisor settings (owner: Member 1). checks.py, router.py and fit_check.py read them.
+
+# Input checks
+min_cv_chars: 200          # a real CV is longer than this
+min_job_chars: 200         # a real job post is longer than this
+max_job_chars: 15000       # protects the LLM from a huge pasted text
+max_arabic_ratio: 0.05     # more than 5% Arabic letters -> not an English CV
+min_job_keywords: 2        # a job post has at least 2 of the words below
+job_keywords:
+  - responsibilities
+  - requirements
+  - qualifications
+  - experience
+  - skills
+  - role
+  - apply
+  - job
+  - position
+  - team
+
+# Routing decisions (spec, section 3.2)
+min_parse_confidence: 0.6  # below this, ask the user to confirm the CV
+min_fit_score: 40          # below this, ask the user if they want to tailor anyway
+max_rounds: 3              # writer -> critic rounds
+
+# Temporary fit score, used by graph/fit_check.py until tools/match_score.py (Member 5) is ready
+fit_score_weights:
+  must: 0.75
+  nice: 0.25

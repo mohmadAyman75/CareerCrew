@@ -1,0 +1,57 @@
+{
+  "headline": "Junior Data Scientist",
+  "summary": "Computer science graduate who builds machine learning and NLP projects with Python.",
+  "experiences": [
+    {
+      "id": "exp1",
+      "title": "Data Science Intern",
+      "organization": "Fawry",
+      "start": "2025-07",
+      "end": "2025-09",
+      "bullets": [
+        {"id": "exp1_b1", "text": "Cleaned and analyzed 2 million payment transactions using Python, Pandas and SQL."},
+        {"id": "exp1_b2", "text": "Built a customer churn model with Scikit-learn that reached 0.81 F1 on the test set."},
+        {"id": "exp1_b3", "text": "Presented weekly findings to the product team using Power BI dashboards."}
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj1",
+      "title": "Arabic Review Sentiment Classifier",
+      "organization": "Graduation project",
+      "start": null,
+      "end": null,
+      "bullets": [
+        {"id": "proj1_b1", "text": "Fine-tuned a BERT model in PyTorch on 40,000 Arabic product reviews, reaching 88% accuracy."},
+        {"id": "proj1_b2", "text": "Served the model as a REST API with FastAPI."}
+      ]
+    },
+    {
+      "id": "proj2",
+      "title": "Movie Recommender",
+      "organization": "Personal project",
+      "start": null,
+      "end": null,
+      "bullets": [
+        {"id": "proj2_b1", "text": "Built a collaborative filtering recommender with Python and Scikit-learn."}
+      ]
+    }
+  ],
+  "education": [
+    {"id": "edu1", "degree": "B.Sc. Computer Science", "institution": "Cairo University", "start": "2021", "end": "2025"}
+  ],
+  "skills": [
+    {"raw": "Python", "esco_id": null, "label": "Python", "evidence_ids": ["exp1_b1", "proj2_b1"]},
+    {"raw": "SQL", "esco_id": null, "label": "SQL", "evidence_ids": ["exp1_b1"]},
+    {"raw": "Pandas", "esco_id": null, "label": "Pandas", "evidence_ids": ["exp1_b1"]},
+    {"raw": "Scikit-learn", "esco_id": null, "label": "Scikit-learn", "evidence_ids": ["exp1_b2", "proj2_b1"]},
+    {"raw": "PyTorch", "esco_id": null, "label": "PyTorch", "evidence_ids": ["proj1_b1"]},
+    {"raw": "BERT", "esco_id": null, "label": "BERT", "evidence_ids": ["proj1_b1"]},
+    {"raw": "FastAPI", "esco_id": null, "label": "FastAPI", "evidence_ids": ["proj1_b2"]},
+    {"raw": "Power BI", "esco_id": null, "label": "Power BI", "evidence_ids": ["exp1_b3"]},
+    {"raw": "Git", "esco_id": null, "label": "Git", "evidence_ids": []}
+  ],
+  "certifications": [],
+  "parse_confidence": 0.92
+}
