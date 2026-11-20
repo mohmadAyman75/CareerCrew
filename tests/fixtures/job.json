@@ -1,0 +1,30 @@
+{
+  "is_valid_job_post": true,
+  "title": "Junior Data Scientist",
+  "seniority": "junior",
+  "min_years": 0,
+  "requirements": [
+    {"raw": "Strong programming skills in Python", "esco_id": null, "label": "Python", "importance": "must"},
+    {"raw": "solid SQL", "esco_id": null, "label": "SQL", "importance": "must"},
+    {"raw": "Hands-on experience with Pandas", "esco_id": null, "label": "Pandas", "importance": "must"},
+    {"raw": "Hands-on experience with Scikit-learn", "esco_id": null, "label": "Scikit-learn", "importance": "must"},
+    {"raw": "at least one deep learning framework (PyTorch or TensorFlow)", "esco_id": null, "label": "PyTorch", "importance": "must"},
+    {"raw": "transformer models such as BERT", "esco_id": null, "label": "BERT", "importance": "must"},
+    {"raw": "hands-on experience running and analyzing A/B tests", "esco_id": null, "label": "A/B testing", "importance": "must"},
+    {"raw": "data visualization tools such as Power BI or Plotly", "esco_id": null, "label": "Power BI", "importance": "must"},
+    {"raw": "LLM applications with LangChain or LlamaIndex", "esco_id": null, "label": "LangChain", "importance": "nice"},
+    {"raw": "serving models with FastAPI or Flask", "esco_id": null, "label": "FastAPI", "importance": "nice"},
+    {"raw": "using Docker", "esco_id": null, "label": "Docker", "importance": "nice"},
+    {"raw": "Apache Spark (PySpark)", "esco_id": null, "label": "PySpark", "importance": "nice"},
+    {"raw": "cloud ML platforms, preferably AWS", "esco_id": null, "label": "AWS", "importance": "nice"},
+    {"raw": "Familiarity with Git", "esco_id": null, "label": "Git", "importance": "nice"}
+  ],
+  "responsibilities": [
+    "Clean, explore and analyze large datasets using Python and SQL.",
+    "Build, evaluate and improve machine learning models.",
+    "Develop NLP solutions for Arabic and English customer reviews.",
+    "Design and analyze A/B tests.",
+    "Package models as APIs with the engineering team.",
+    "Build dashboards and present findings to non-technical stakeholders."
+  ]
+}

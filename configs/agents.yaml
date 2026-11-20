@@ -1,0 +1,8 @@
+# Which version of each agent the graph uses: "fake" or "real".
+# When your agent is ready and passes its tests, change "fake" to "real".
+
+profile: fake      # Member 2
+job_intel: fake    # Member 3
+writer: fake       # Member 4
+critic: fake       # Member 5
+interview: fake    # Member 6

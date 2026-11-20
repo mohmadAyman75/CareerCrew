@@ -1,0 +1,11 @@
+{
+  "match_score": 78.5,
+  "score_breakdown": {"must": 0.875, "nice": 0.333, "semantic": 0.71, "seniority": 1.0, "format": 1.0},
+  "claim_checks": [
+    {"bullet_text": "Analyzed 2 million payment transactions with Python, Pandas and SQL at Fawry.", "verdict": "supported", "reason": "Matches exp1_b1."},
+    {"bullet_text": "Built a Scikit-learn churn model that reached 0.81 F1 on the test set.", "verdict": "supported", "reason": "Matches exp1_b2."},
+    {"bullet_text": "Fine-tuned BERT in PyTorch on 40,000 Arabic reviews, reaching 88% accuracy.", "verdict": "supported", "reason": "Matches proj1_b1."}
+  ],
+  "feedback": [],
+  "passed": true
+}

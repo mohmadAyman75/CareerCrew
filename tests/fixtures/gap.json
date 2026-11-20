@@ -1,0 +1,8 @@
+{
+  "matched": ["Python", "SQL", "Pandas", "Scikit-learn", "PyTorch", "BERT", "Power BI", "FastAPI", "Git"],
+  "partial": [],
+  "missing": ["A/B testing", "LangChain", "Docker", "PySpark", "AWS"],
+  "learning_plan": [
+    {"skill": "A/B testing", "suggestion": "Design and analyze one A/B test on a public dataset and add it to your projects."}
+  ]
+}

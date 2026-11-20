@@ -1,0 +1,30 @@
+[
+  {
+    "question": "How did you handle class imbalance in your churn model?",
+    "kind": "technical",
+    "answer": "I used class weights in Scikit-learn and checked F1 instead of accuracy.",
+    "follow_up": null,
+    "score": {
+      "relevance": 5,
+      "depth": 3,
+      "structure": 4,
+      "evidence": 4,
+      "feedback": "Good choice of metric. Explain why class weights beat oversampling here.",
+      "better_answer_outline": ["The imbalance ratio", "Why F1, not accuracy", "Class weights vs. oversampling", "The final F1 of 0.81"]
+    }
+  },
+  {
+    "question": "Tell me about a time you explained results to a non-technical team.",
+    "kind": "behavioral",
+    "answer": "At Fawry I presented weekly Power BI dashboards to the product team.",
+    "follow_up": "What decision did the team take from one of those dashboards?",
+    "score": {
+      "relevance": 4,
+      "depth": 2,
+      "structure": 2,
+      "evidence": 3,
+      "feedback": "Use the STAR structure and name one concrete result.",
+      "better_answer_outline": ["Situation: weekly product meeting", "Task: explain churn drivers", "Action: one clear dashboard", "Result: the decision it led to"]
+    }
+  }
+]

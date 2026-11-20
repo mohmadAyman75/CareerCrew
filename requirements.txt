@@ -1,1 +1,15 @@
-pypdf
+# Document parsing
+pypdf>=6.0
+
+# LLM + agents (spec section 6.5: Groq through LangChain, orchestration with LangGraph)
+langchain>=1.0,<2
+langchain-groq>=1.0,<2
+langgraph>=1.0,<2
+
+# Schemas and settings
+pydantic>=2.7,<3
+python-dotenv>=1.0
+pyyaml>=6.0
+
+# Tests (pytest 9.2 crashes on Python 3.10.0 with "NodeId object has no attribute _str_cache")
+pytest>=8,<9

@@ -52,3 +52,20 @@ Thumbs.db
 # Large artifacts & temp files
 *.zip
 *.log
+
+# Experiments and notebooks (spec section 10: notebooks are not allowed in the repo)
+scratch/
+.ipynb_checkpoints/
+
+# Real personal data: never commit (spec section 7.4)
+# Keep real CVs in data/private/ on your own machine. Use synthetic samples in data/samples/.
+data/private/
+data/samples/Mohamed_Ayman_CV_Fixed.pdf
+
+# Downloaded and processed datasets (rebuilt by the data pipeline)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*.parquet
+
+# Test caches
+.pytest_cache/

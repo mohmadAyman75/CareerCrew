@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "summary": {
+    "text": "Computer science graduate who builds machine learning and NLP models with Python, Pandas, SQL and PyTorch.",
+    "source_ids": ["exp1_b1", "proj1_b1"]
+  },
+  "sections": [
+    {
+      "title": "Experience",
+      "bullets": [
+        {"text": "Analyzed 2 million payment transactions with Python, Pandas and SQL at Fawry.", "source_ids": ["exp1_b1"]},
+        {"text": "Built a Scikit-learn churn model that reached 0.81 F1 on the test set.", "source_ids": ["exp1_b2"]},
+        {"text": "Presented weekly findings to the product team with Power BI dashboards.", "source_ids": ["exp1_b3"]}
+      ]
+    },
+    {
+      "title": "Projects",
+      "bullets": [
+        {"text": "Fine-tuned BERT in PyTorch on 40,000 Arabic reviews, reaching 88% accuracy.", "source_ids": ["proj1_b1"]},
+        {"text": "Served the sentiment model as a REST API with FastAPI.", "source_ids": ["proj1_b2"]},
+        {"text": "Built a collaborative filtering recommender with Scikit-learn.", "source_ids": ["proj2_b1"]}
+      ]
+    }
+  ]
+}
