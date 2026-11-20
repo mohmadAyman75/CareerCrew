@@ -54,9 +54,7 @@ class TailoredSection(StrictBaseModel):
 class TailoredResume(StrictBaseModel):
     """Complete tailored resume draft produced by the Resume Writer Agent."""
 
-    version: int = Field(
-        description="Schema or iteration version number."
-    )
+    version: int = Field(description="Schema or iteration version number.")
     summary: TailoredBullet = Field(
         description="Tailored executive summary with explicit source_ids grounding."
     )

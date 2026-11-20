@@ -196,7 +196,7 @@ def _render_section_content(
             r_date.font.color.rgb = RGBColor(100, 116, 139)
 
     # Render Bullets
-    for bullet in (section.bullets or []):
+    for bullet in section.bullets or []:
         p_bullet = doc.add_paragraph(style="List Bullet")
         p_bullet.paragraph_format.space_before = Pt(0)
         p_bullet.paragraph_format.space_after = Pt(2)

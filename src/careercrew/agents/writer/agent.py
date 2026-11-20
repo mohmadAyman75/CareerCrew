@@ -142,9 +142,7 @@ class ResumeWriterAgent:
         self.system_template = _jinja_env.get_template("system.md")
         self.task_template = _jinja_env.get_template("task.md")
 
-    def _to_resume_model(
-        self, draft_data: Union[TailoredResume, Dict[str, Any]]
-    ) -> TailoredResume:
+    def _to_resume_model(self, draft_data: Union[TailoredResume, Dict[str, Any]]) -> TailoredResume:
         if isinstance(draft_data, TailoredResume):
             return draft_data
         return TailoredResume.model_validate(draft_data)
@@ -272,11 +270,15 @@ class ResumeWriterAgent:
                     target_bullet = bullet_map[b_id]
                 else:
                     # Match by section and bullet indices if provided
-                    s_idx = getattr(chk, "section_idx", None) if hasattr(chk, "section_idx") else (
-                        chk.get("section_idx") if isinstance(chk, dict) else None
+                    s_idx = (
+                        getattr(chk, "section_idx", None)
+                        if hasattr(chk, "section_idx")
+                        else (chk.get("section_idx") if isinstance(chk, dict) else None)
                     )
-                    b_idx = getattr(chk, "bullet_idx", None) if hasattr(chk, "bullet_idx") else (
-                        chk.get("bullet_idx") if isinstance(chk, dict) else None
+                    b_idx = (
+                        getattr(chk, "bullet_idx", None)
+                        if hasattr(chk, "bullet_idx")
+                        else (chk.get("bullet_idx") if isinstance(chk, dict) else None)
                     )
                     if s_idx is not None and b_idx is not None:
                         pos_id = f"sec_{s_idx}_b_{b_idx}"
